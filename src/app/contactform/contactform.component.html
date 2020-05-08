@@ -1,0 +1,61 @@
+<div class="container" fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="start" fxLayout.xs="column" fxLayout.sm="column">
+    <div fxFlex="1 1 35%" fxFlex.sm="" fxLayout="column">
+        <mat-list>
+            <div mat-subheader>
+                <h4>About Us</h4>
+            </div>
+            <mat-list-item>
+                <mat-icon mat-list-icon>contact_mail</mat-icon>
+                <div mat-line>Email</div>
+                <div mat-line>ramakanth473@gmail.com</div>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon mat-list-icon>phone_in_talk</mat-icon>
+                <div mat-line>Phone</div>
+                <div mat-line>+49 176 78945632</div>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon mat-list-icon>location_city</mat-icon>
+                <div mat-line>Location</div>
+                <div mat-line> Hyderabad</div>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon mat-list-icon>location_on</mat-icon>
+                <div mat-line>Address</div>
+                <div mat-line>1-0-23 Jubile Hills, Hyderabad</div>
+            </mat-list-item>
+        </mat-list>
+    </div>
+    <div fxFlex="1 1 10%"></div>
+    <div fxFlex="1 1 auto" fxFlex.sm="" fxLayout="column">
+        <div mat-subheader>
+            <h4>Contact Form</h4>
+        </div>
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="ename">Email Address</label>
+            <input type="text" id="ename" name="lastname" placeholder="Your email address..">
+
+            <!-- <label for="country">Country</label>
+          <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+          </select> -->
+
+            <label for="subject">Message</label>
+            <textarea id="subject" name="message" placeholder="Write something.." style="height:100px"></textarea>
+
+            <input class="submitbutton" type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<div class="container" fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="start" fxLayout.xs="column" fxLayout.sm="column">
+    <app-socialmedia></app-socialmedia>
+</div>

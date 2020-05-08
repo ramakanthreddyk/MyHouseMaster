@@ -1,0 +1,41 @@
+<div class="card-container">
+    <div class="card" >
+        <mat-icon>assignment</mat-icon>
+        <h3><span>Rental Mangement</span></h3>
+         <mat-list role="list">
+             <span *ngFor="let item of rentalManagement">
+                <mat-list-item role = "listitem"><mat-icon>keyboard_arrow_right</mat-icon>{{item}}</mat-list-item>
+             </span>
+         </mat-list>
+    </div>
+
+    <div class="card">
+        <mat-icon>dashboard</mat-icon>
+        <h3><span>End to End Services</span></h3>
+        <mat-list role="list">
+            <span *ngFor="let item of endToEndCollection">
+               <mat-list-item role = "listitem"><mat-icon>keyboard_arrow_right</mat-icon>{{item}}</mat-list-item>
+            </span>
+        </mat-list>
+    </div>
+
+    <div class="card">
+        <mat-icon>home</mat-icon>
+        <h3><span>Property Management</span></h3>
+        <mat-list role="list">
+            <span *ngFor="let item of propertyManagement">
+               <mat-list-item role = "listitem"><mat-icon>keyboard_arrow_right</mat-icon>{{item}}</mat-list-item>
+            </span>
+        </mat-list>
+    </div>
+
+    <div class="card">
+        <mat-icon>folder_special</mat-icon>
+        <h3><span>Online Rent Agreement</span></h3>
+        <mat-list role="list">
+            <span *ngFor="let item of rentalAgreement">
+               <mat-list-item role = "listitem"><mat-icon>keyboard_arrow_right</mat-icon>{{item}}</mat-list-item>
+            </span>
+        </mat-list>
+    </div>
+</div>

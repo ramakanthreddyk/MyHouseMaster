@@ -1,0 +1,13 @@
+<div class="toolbar" role="banner">
+    <img width="100" alt="My House Master" src="assets/logo.PNG" />
+    <span *ngFor="let link of ids">
+      <a [routerLink]='"."' [fragment]="link">{{link}}</a>
+    </span>
+    <div class="spacer"></div>
+
+    <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+
+</div>
