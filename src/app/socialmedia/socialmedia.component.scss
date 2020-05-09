@@ -1,19 +1,5 @@
 .social-media {
-    font-size: 30px;
     margin: 10px;
-    color: black;
-    /*  float: right; */
-    position: relative;
-}
-
-div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
-    display: flex;
 }
 
 div span {
@@ -21,47 +7,46 @@ div span {
     margin: 0 80px 0 80px;
 }
 
-div span .fab {
-    font-size: 40px;
-    color: #262626;
-    line-height: 80px;
-    transition: .5s;
-}
-
-div span a {
-    position: relative;
-    display: block;
-    width: 80px;
-    height: 80px;
-    background-color: #fff;
-    text-align: center;
-    transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0, 0);
-    transition: .5s;
-    box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.5);
-}
-
-div span a::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: -20px;
-    height: 100%;
-    width: 20px;
-    background: #b1b1b1;
-    transition: .5s;
-    transform: rotate(0deg) skewY(-45deg);
-}
-
-div span a::after {
-    content: "";
-    position: absolute;
-    top: 80px;
-    left: -11px;
-    height: 20px;
-    width: 100%;
-    background: #b1b1b1;
-    transition: .5s;
-    transform: rotate(0deg) skewX(-45deg);
+@media screen and (min-width: 64em) {
+    div span .fab {
+        font-size: 40px;
+        color: #262626;
+        line-height: 80px;
+        transition: .5s;
+    }
+    div span a {
+        position: relative;
+        display: block;
+        width: 80px;
+        height: 80px;
+        background-color: #fff;
+        text-align: center;
+        transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0, 0);
+        transition: .5s;
+        box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.5);
+    }
+    div span a::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: -20px;
+        height: 100%;
+        width: 20px;
+        background: #b1b1b1;
+        transition: .5s;
+        transform: rotate(0deg) skewY(-45deg);
+    }
+    div span a::after {
+        content: "";
+        position: absolute;
+        top: 80px;
+        left: -11px;
+        height: 20px;
+        width: 100%;
+        background: #b1b1b1;
+        transition: .5s;
+        transform: rotate(0deg) skewX(-45deg);
+    }
 }
 
 div span a:hover {
